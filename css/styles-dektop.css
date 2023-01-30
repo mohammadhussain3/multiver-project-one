@@ -1,0 +1,55 @@
+:root {
+    --primary-colour: #333;
+    --secondary-colour: #ebebeb;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+}
+
+nav {
+    background-color: var(--primary-colour);
+    width: 10rem;
+    height: 94vh;
+    position: fixed;
+    border-radius: 10px;
+    top: 2rem;
+    left: 2rem;
+    padding-inline: 0.5rem;
+    padding-block: 2rem;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+    margin-bottom: 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+main {
+    background-color: bisque;
+    margin-left: 14rem;
+    margin-block: 2rem;
+    margin-right: 2rem;
+    height: 94vh;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
