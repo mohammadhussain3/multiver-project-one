@@ -3,6 +3,8 @@
     --secondary-colour: #ebebeb;
 }
 
+/* CSS Reset */
+
 *,
 *::after,
 *::before {
@@ -13,9 +15,22 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     background-color: var(--secondary-colour);
     color: var(--primary-colour);
+}
+
+/* Utilitiy Classes */
+.flex {
+    display: flex;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
 }
 
 nav {
@@ -44,6 +59,13 @@ nav a {
     letter-spacing: 1px;
 }
 
+nav a:hover {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    border: 2px solid var(--secondary-colour);
+    transition: 500ms ease-in;
+}
+
 main {
     background-color: bisque;
     margin-left: 14rem;
@@ -52,4 +74,23 @@ main {
     height: 94vh;
     border-radius: 10px;
     padding: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main header {
+    margin-bottom: 2rem;
+}
+
+main section {
+    max-height: 20rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+main section img,
+main section article {
+
+    max-width: 48%;
+    border-radius: 8px;
 }
