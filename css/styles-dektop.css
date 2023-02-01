@@ -59,12 +59,14 @@ nav a {
     letter-spacing: 1px;
 }
 
-nav a:hover {
+nav a:hover,
+.selected {
     background-color: var(--primary-colour);
     color: var(--secondary-colour);
     border: 2px solid var(--secondary-colour);
     transition: 500ms ease-in;
 }
+
 
 main {
     background-color: bisque;
