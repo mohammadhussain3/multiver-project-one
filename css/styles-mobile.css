@@ -1,3 +1,10 @@
+:root {
+    --primary-colour: #333;
+    --secondary-colour: #ebebeb;
+}
+
+/* CSS Reset */
+
 *,
 *::after,
 *::before {
@@ -5,8 +12,91 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
 }
 
 body {
-    background-color: red;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+}
+
+/* Utilitiy Classes */
+.flex {
+    display: flex;
+}
+
+
+
+nav {
+    background-color: var(--primary-colour);
+    position: sticky;
+    top: 0;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding-inline: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+nav a:hover,
+.selected {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    border: 2px solid var(--secondary-colour);
+    transition: 500ms ease-in;
+}
+
+
+main {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+}
+
+main header {
+    margin-bottom: 2rem;
+}
+
+main section {
+    gap: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main section img,
+main section article {
+
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary-colour);
+    height: 5rem;
+    color: var(--secondary-colour);
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -73,11 +73,9 @@ main {
     margin-left: 14rem;
     margin-block: 2rem;
     margin-right: 2rem;
-    height: 94vh;
     border-radius: 10px;
     padding: 1.5rem;
-    overflow-x: hidden;
-    overflow-y: scroll;
+
 }
 
 main header {
@@ -88,6 +86,7 @@ main section {
     max-height: 20rem;
     gap: 1rem;
     margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 main section img,
@@ -95,4 +94,15 @@ main section article {
 
     max-width: 48%;
     border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary-colour);
+    height: 5rem;
+    margin-top: 5rem;
+    color: var(--secondary-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
